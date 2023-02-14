@@ -1,0 +1,65 @@
+body {
+	background-color: #f7a6b7;
+}
+
+.heart {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 200px;
+	background-color: #d9534f;
+	border-radius: 50%;
+	animation: pulse 1s ease-in-out infinite;
+}
+
+.letter {
+	position: absolute;
+	display: inline-block;
+	font-size: 80px;
+	font-weight: bold;
+	color: #fff;
+	animation: rotate 2s linear infinite;
+}
+
+.letter:nth-child(1) {
+	top: 50px;
+	left: 30px;
+}
+
+.letter:nth-child(2) {
+	top: 30px;
+	left: 80px;
+}
+
+.letter:nth-child(3) {
+	top: 30px;
+	left: 120px;
+}
+
+.letter:nth-child(4) {
+	top: 50px;
+	left: 170px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
